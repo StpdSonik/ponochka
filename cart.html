@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Поночка</title>
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="styles/iconsfont.css">
+        <link rel="stylesheet" type="text/css" href="styles/cart.css">
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+        
+        <style>
+           
+        </style>
+    </head>
+    
+    <body>
+        <div class="super_container">
+        
+            <!-- Header -->
+        
+            <header class="header">
+                <div class="header_overlay"></div>
+                    <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                        <div class="logo">
+                            <a href="#">
+                                <div class="d-flex flex-row align-items-center justify-content-start">
+                                    <div><img src="images/header/logo.svg" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hamburger"><i class="icon-menuburger" aria-hidden="true"></i></div>
+                        <nav class="main_nav">
+                            <ul class="d-flex flex-row align-items-start justify-content-start">
+                                <li><a href="#">Девочки</a></li>
+                                <li><a href="#">Мальчики</a></li>
+                                <li><a href="#">Малыши</a></li>
+                                <li><a href="#">Информация о магазине</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+                            <!-- Search -->
+                            <div class="header_search">
+                                <form action="#" id="header_search_form">
+                                    <input type="text" class="search_input" placeholder="Поиск" required="required">
+                                    <button class="header_search_button">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="user_icons">
+                                <!-- Profile -->
+                                <div class="profile"><a href="profile.html">
+                                        <div>
+                                            <i class="icon-profile-account"></i>
+                                            <div class="icon_text">Профиль</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Favorites -->
+                                <div class="favorites"><a href="favotites.html">
+                                        <div>
+                                            <i class="icon-favorites"></i>
+                                            <div class="icon_text">Избранное</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Cart -->
+                                <div class="cart"><a href="cart.html">
+                                        <div>
+                                            <i class="icon-bag"></i>
+                                            <div class="icon_text">Корзина</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <div class="super_container_inner">
+            <div class="super_overlay"></div>
+            <div class="cart_content_container">
+                        <!-- Cart -->        
+                <div class="cart_section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="cart_container">
+                
+                                    <!-- Cart Bar -->
+                                    <div class="cart_bar">
+                                        <ul class="cart_bar_list item_list d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">Товар</li>
+                                            <li>Цвет</li>
+                                            <li>Размер</li>
+                                            <li>Цена</li>
+                                            <li>Кол-во</li>
+                                            <li>Итог</li>
+                                        </ul>
+                                    </div>
+                
+                                    <!-- Cart Items -->
+                                    <div class="cart_items">
+                                        <ul class="cart_items_list">
+                
+                                            <!-- Cart Item -->
+                                            <li
+                                                class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+                                                <div
+                                                    class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
+                                                    <div>
+                                                        <div class="product_number">1</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="product_image"><img src="images/products/product_1.jpg" alt=""></div>
+                                                    </div>
+                                                    <div class="product_name_container">
+                                                        <div class="product_name"><a href="#">Комплект для девочек
+                                                                </a></div>
+                                                        <div class="product_text">кофта и юбка</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product_color product_text"><span>Цвет: </span>сиреневый</div>
+                                                <div class="product_size product_text"><span>Размер: </span>152</div>
+                                                <div class="product_price product_text"><span>Цена: </span>1300 руб</div>
+                                                <div class="product_quantity_container">
+                                                    <div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+                                                        <span class="product_text product_num">1</span>
+                                                        <div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
+                                                        <div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product_total product_text"><span>Итог: </span>1300 руб</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                
+                                    <!-- Cart Buttons -->
+                                    <div class="cart_buttons d-flex flex-row align-items-start justify-content-start">
+                                        <div
+                                            class="cart_buttons_inner ml-sm-auto d-flex flex-row align-items-start justify-content-start flex-wrap">
+                                            <div class="button button_clear trans_200"><a href="categories.html">очистить корзину</a></div>
+                                            <div class="button button_continue trans_200"><a href="categories.html">продолжить покупки</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row cart_extra_row">
+                            <div class="col-lg-6">
+                                <div class="cart_extra cart_extra_1">
+                                    <div class="cart_extra_content cart_extra_coupon">
+                                        <div class="cart_extra_title">Скидочный купон</div>
+                                        <div class="coupon_form_container">
+                                            <form action="#" id="coupon_form" class="coupon_form">
+                                                <input type="text" class="coupon_input" required="required">
+                                                <button class="coupon_button">применить</button>
+                                            </form>
+                                        </div>
+                                        <div class="coupon_text"></div>
+                                        <div class="shipping">
+                                            <div class="cart_extra_title">Метод доставки</div>
+                                            <ul>
+                                                <li class="shipping_option d-flex flex-row align-items-center justify-content-start">
+                                                    <label class="radio_container">
+                                                        <input type="radio" id="radio_2" name="shipping_radio" class="shipping_radio">
+                                                        <span class="radio_mark"></span>
+                                                        <span class="radio_text">Почта России</span>
+                                                    </label>
+                                                    <div class="shipping_price ml-auto">350 руб</div>
+                                                </li>
+                                                <li class="shipping_option d-flex flex-row align-items-center justify-content-start">
+                                                    <label class="radio_container">
+                                                        <input type="radio" id="radio_3" name="shipping_radio" class="shipping_radio"
+                                                            checked>
+                                                        <span class="radio_mark"></span>
+                                                        <span class="radio_text">Самовывоз</span>
+                                                    </label>
+                                                    <div class="shipping_price ml-auto">Бесплатно</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 cart_extra_col">
+                                <div class="cart_extra cart_extra_2">
+                                    <div class="cart_extra_content cart_extra_total">
+                                        <div class="cart_extra_title">Сумма</div>
+                                        <ul class="cart_extra_total_list">
+                                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                                <div class="cart_extra_total_title">Товары</div>
+                                                <div class="cart_extra_total_value ml-auto">1300 руб</div>
+                                            </li>
+                                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                                <div class="cart_extra_total_title">Доставка</div>
+                                                <div class="cart_extra_total_value ml-auto">Бесплатно</div>
+                                            </li>
+                                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                                <div class="cart_extra_total_title">Итог</div>
+                                                <div class="cart_extra_total_value ml-auto">1300 руб</div>
+                                            </li>
+                                        </ul>
+                                        <div class="checkout_button trans_200"><a href="checkout.html">перейти к оплате</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- Футтер -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_col">
+                    <a class="footer_link" href="#">О магазине</a>
+                    <a class="footer_link" href="#">Информация</a>
+                    <a class="footer_link" href="#">Клиентам</a>
+                    <a class="footer_link" href="#">Акции и скидки</a>
+                    <a class="footer_link" href="#">Как заказать</a>
+                    <a class="footer_link" href="#">Обмен и возврат</a>
+                </div>
+                <div class="footer_col">
+                    <a class="footer_link" href="#">Мои заказы</a>
+                    <a class="footer_link" href="#">Вопросы и ответы</a>
+                    <a class="footer_link" href="#">Личный кабинет</a>
+                </div>
+                <div class="footer_col">
+                    <a class="footer_link"></a>
+                </div>
+                <div class="footer_col">
+                    <div class="footer_text">Мы в соц.сетях:</div>
+                    <div class="footer_text">
+                        <a href="#"><i class="icon-vk"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        </div>
+        </div>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="styles/bootstrap-4.1.2/popper.js"></script>
+                <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+                <script src="plugins/greensock/TweenMax.min.js"></script>
+                <script src="plugins/greensock/TimelineMax.min.js"></script>
+                <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+                <script src="plugins/greensock/animation.gsap.min.js"></script>
+                <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+                <script src="plugins/easing/easing.js"></script>
+                <script src="plugins/progressbar/progressbar.min.js"></script>
+                <script src="plugins/parallax-js-master/parallax.min.js"></script>
+                <script src="plugins/slick/slick.min.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/profile_orders.js"></script>
+                <script src="js/slider.js" type="text/javascript"></script>
+                
+                
+                </body>
+                
+                </html>

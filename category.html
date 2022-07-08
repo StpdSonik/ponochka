@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Поночка</title>
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+        <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="styles/iconsfont.css">
+        <link rel="stylesheet" type="text/css" href="styles/category.css">
+        <link rel="stylesheet" type="text/css" href="styles/category_responsive.css">
+
+        <style>
+
+        </style>
+    </head>
+
+
+  
+    <body>
+    
+        <div class="super_container">
+        
+            <!-- Header -->
+        
+            <header class="header">
+                <div class="header_overlay"></div>
+                <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                    <div class="logo">
+                        <a href="#">
+                            <div class="d-flex flex-row align-items-center justify-content-start">
+                                <div><img src="images/header/logo.svg" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hamburger"><i class="icon-menuburger" aria-hidden="true"></i></div>
+                    <nav class="main_nav">
+                        <ul class="d-flex flex-row align-items-start justify-content-start">
+                            <li class="active"><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Home Deco</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+                        <!-- Search -->
+                        <div class="header_search">
+                            <form action="#" id="header_search_form">
+                                <input type="text" class="search_input" placeholder="Поиск" required="required">
+                                <button class="header_search_button">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="user_icons">
+                            <!-- Profile -->
+                            <div class="profile"><a href="profile.html">
+                                    <div>
+                                        <i class="icon-profile-account"></i>
+                                        <div class="icon_text">Профиль</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Favorites -->
+                            <div class="favorites"><a href="favotites.html">
+                                    <div>
+                                        <i class="icon-favorites"></i>
+                                        <div class="icon_text">Избранное</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Cart -->
+                            <div class="cart"><a href="cart.html">
+                                    <div>
+                                        <i class="icon-bag"></i>
+                                        <div class="icon_text">Корзина</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </header>
+        
+        <div class="super_container_inner">
+            <div class="super_overlay"></div>
+                <div class="catalog_content">
+                    <div class="catalog_container">
+                        <!-- Фильтр -->
+                        <div class="catalog_filters">
+                            <div class="catalog_filter catalog_filter--open">
+                                <div class="catalog_filter_top">
+                                    <div class="catalog_filter_caption">
+                                        <h3 class="catalog_filter_title">Категории</h3>
+                                        <span class="catalog_filter_quantity quantity">1</span>
+                                    </div>
+                                    <span class="catalog_filter_toggle"></span>
+                                </div>
+                                <div class="catalog_filter_bottom">
+                                    <ul class="catalog_filter_items">
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Все категории</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Верхняя одежда</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Штаны</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Футболки</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Юбки</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Платья</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Обувь</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Рюкзаки</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Игрушки</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Нижнее белье</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog_filter">
+                                <div class="catalog_filter_top">
+                                    <div class="catalog_filter_caption">
+                                        <h3 class="catalog_filter_title">Цвет</h3>
+                                        <span class="catalog_filter_quantity quantity">1</span>
+                                    </div>
+                                    <span class="catalog_filter_toggle"></span>
+                                </div>
+                                <div class="catalog_filter_bottom">
+                                    <ul class="catalog_filter_items">
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Все цвета</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Белый</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Черный</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Зеленый</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Желтый</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Синий</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Фиолтетовый</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Розовый</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Красный</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Смешанный</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog_filter">
+                                <div class="catalog_filter_top">
+                                    <div class="catalog_filter_caption">
+                                        <h3 class="catalog_filter_title">Размер</h3>
+                                        <span class="catalog_filter_quantity quantity">1</span>
+                                    </div>
+                                    <span class="catalog_filter_toggle"></span>
+                                </div>
+                                <div class="catalog_filter_bottom">
+                                    <ul class="catalog_filter_items">
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">98</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">112</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">126</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">132</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">140</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">146</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">152</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">70</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog_filter">
+                                <div class="catalog_filter_top">
+                                    <div class="catalog_filter_caption">
+                                        <h3 class="catalog_filter_title">Материал</h3>
+                                        <span class="catalog_filter_quantity quantity">3</span>
+                                    </div>
+                                    <span class="catalog_filter_toggle"></span>
+                                </div>
+                                <div class="catalog_filter_bottom">
+                                    <ul class="catalog_filter_items">
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Хлопок</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Флис</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Трикотаж</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Деним</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Полиэстер</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Фатин</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Текстиль</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Шерсть</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Эластан</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog_filter">
+                                <div class="catalog_filter_top">
+                                    <div class="catalog_filter_caption">
+                                        <h3 class="catalog_filter_title">Сезон</h3>
+                                        <span class="catalog_filter_quantity quantity">3</span>
+                                    </div>
+                                    <span class="catalog_filter_toggle"></span>
+                                </div>
+                                <div class="catalog_filter_bottom">
+                                    <ul class="catalog_filter_items">
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Зима</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Весна</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Лето</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Осень</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Демисезонная</span>
+                                            </label>
+                                        </li>                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog_filter">
+                                <div class="catalog_filter_top">
+                                    <div class="catalog_filter_caption">
+                                        <h3 class="catalog_filter_title">Стиль</h3>
+                                        <span class="catalog_filter_quantity quantity">1</span>
+                                    </div>
+                                    <span class="catalog_filter_toggle"></span>
+                                </div>
+                                <div class="catalog_filter_bottom">
+                                    <ul class="catalog_filter_items">
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Повседневный</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Школа</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Спортивный</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Праздничный</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Домашний</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Вечерний</span>
+                                            </label>
+                                        </li>
+                                        <li class="catalog_filter_item">
+                                            <label class="custom_checkbox">
+                                                <input type="checkbox" class="custom_checkbox_input">
+                                                <span class="custom_checkbox_text">Пляжный</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="catalog_grid">
+                            <div class="catalog_grid_props catalog_props">
+                                <div class="catalog_props_top">
+                                    <div class="catalog_props_columns catalog_columns">
+                                        <span class="catalog_columns_text">Количество столбцов:</span>
+                                        <ul class="catalog_columns_list">
+                                            <li class="catalog_columns_item"><button class="btn_reset main_link catalog_columns_btn" data-grid-columns = "2">2</button></li>
+                                            <li class="catalog_columns_item"><button class="btn_reset main_link catalog_columns_btn catalog_columns_btn--current" data-grid-columns = "3">3</button></li>
+                                            <li class="catalog_columns_item"><button class="btn_reset main_link catalog_columns_btn" data-grid-columns = "4">4</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="custom_select">
+                                        <div class="custom_select_top">Сначала популярные</div>
+                                        <div class="custom_select_dropdown">
+                                            <ul class="custom_select_list">
+                                                <li class="custom_select_item">Сначала популярные</li>
+                                                <li class="custom_select_item">Сначала новые</li>
+                                                <li class="custom_select_item">По возрастанию цены</li>
+                                                <li class="custom_select_item">По убыванию цены</li>
+                                                <li class="custom_select_item">Со скидкой</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_props_choice catalog_choice">
+                                    <button class="btn_reset catalog_choice_item">
+                                        28
+                                        <i class="icon-close"></i>
+                                    </button>
+                                    <button class="btn_reset catalog_choice_item">
+                                        Юбки
+                                        <i class="icon-close"></i>
+                                    </button>
+                                    <button class="btn_reset catalog_choice_clear">Убрать все</button>
+                                </div>
+                            </div>
+                            <ul class="catalog_grid_content" data-grid-columns = "3">
+                                <li class="catalog_grid_item"> 
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_1.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Нежно-фиолетовый детский комплект на девочку</div>
+                                                <div class="item_price"> 1300<span>руб</span></div>
+                                            </div>
+                                    </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_2.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Комплект детских топов на девочку</div>
+                                                <div class="item_price"> 1500<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_3.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Розовые шорты на резинке</div>
+                                                <div class = "item_prices">
+                                                <div class="item_price"> 750<span>руб</span></div>
+                                                <div class="item_old_price"> 900руб</div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_4.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Комлект шорт на мальчика</div>
+                                                <div class="item_price"> 1800<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_6.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Летний лавандовый костюм на девочку с узором из сердец</div>
+                                                <div class="item_price"> 1000<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_12.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Летний костюм с тигрятами</div>
+                                                <div class="item_price"> 750<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_13.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Спортивный костюм на мальчика</div>
+                                                <div class="item_price"> 1400<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_14.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Спортивный комплект на девочку</div>
+                                                <div class="item_price"> 1100<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                                <li class="catalog_grid_item">
+                                    <div class="item"><a href="#">
+                                            <div class="item_image"><img src="images/products/product_18.jpg"></div>
+                                            <div class="item_description">
+                                                <div class="item_name">Пижама: футболка и шорты</div>
+                                                <div class="item_price"> 900<span>руб</span></div>
+                                            </div>
+                                        </a></div>
+                                    <ul class="item_buttons">
+                                        <button class="item_button button_favorites"><i class="icon-favorites"></i></button>
+                                        <button class="item_button button_bag"><i class="icon-bag"></i></button>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="pagination">
+                                <li class="pagination_item"><a href="#" class="pagination_link">
+                                    <i class="icon-arrow-left"></i>
+                                    Назад                                    
+                                </a></li>
+                                <li class="pagination_item"><a href="#" class="pagination_link pagination_link--current">1</a></li>
+                                <li class="pagination_item"><a href="#" class="pagination_link">2</a></li>
+                                <li class="pagination_item"><a href="#" class="pagination_link">3</a></li>
+                                <li class="pagination_item"><a href="#" class="pagination_link">
+                                    Вперед
+                                    <i class="icon-arrow-right"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+        
+            <!-- Футтер -->
+            <footer class="footer">
+                <div class="footer_container">
+                    <div class="footer_col">
+                        <a class="footer_link" href="#">О магазине</a>
+                        <a class="footer_link" href="#">Информация</a>
+                        <a class="footer_link" href="#">Клиентам</a>
+                        <a class="footer_link" href="#">Акции и скидки</a>
+                        <a class="footer_link" href="#">Как заказать</a>
+                        <a class="footer_link" href="#">Обмен и возврат</a>
+                    </div>
+                    <div class="footer_col">
+                        <a class="footer_link" href="#">Мои заказы</a>
+                        <a class="footer_link" href="#">Вопросы и ответы</a>
+                        <a class="footer_link" href="#">Личный кабинет</a>
+                    </div>
+                    <div class="footer_col">
+                        <a class="footer_link"></a>
+                    </div>
+                    <div class="footer_col">
+                        <div class="footer_text">Мы в соц.сетях:</div>
+                        <div class="footer_text">
+                            <a href="#"><i class="icon-vk"></i></a>
+                            <a href="#"><i class="icon-instagram"></i></a>
+                            <a href="#"><i class="icon-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="styles/bootstrap-4.1.2/popper.js"></script>
+        <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+        <script src="plugins/greensock/TweenMax.min.js"></script>
+        <script src="plugins/greensock/TimelineMax.min.js"></script>
+        <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+        <script src="plugins/greensock/animation.gsap.min.js"></script>
+        <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+        <script src="plugins/easing/easing.js"></script>
+        <script src="plugins/progressbar/progressbar.min.js"></script>
+        <script src="plugins/parallax-js-master/parallax.min.js"></script>
+        <script src="plugins/slick/slick.min.js"></script>
+        <script src="js/catalog_filter_toggle.js" type="text/javascript"></script>
+        <script src="js/columns_number_selector.js" type="text/javascript"></script>
+       
+        <!-- <script type="module" src="js/_vars.js" ></script> -->
+        <!-- <script src="js/slider.js" type="text/javascript"></script> -->
+    </body>
+</html>

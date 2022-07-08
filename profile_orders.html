@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Поночка</title>
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+        <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="styles/iconsfont.css">
+        <link rel="stylesheet" type="text/css" href="styles/profile_orders.css">
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+        
+        <style>
+           
+        </style>
+    </head>
+    
+    <body>
+        <div class="super_container">
+        
+            <!-- Header -->
+        
+            <header class="header">
+                <div class="header_overlay"></div>
+                <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                    <div class="logo">
+                        <a href="#">
+                            <div class="d-flex flex-row align-items-center justify-content-start">
+                                <div><img src="images/header/logo.svg" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hamburger"><i class="icon-menuburger" aria-hidden="true"></i></div>
+                    <nav class="main_nav">
+                        <ul class="d-flex flex-row align-items-start justify-content-start">
+                            <li class="active"><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Home Deco</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+                        <!-- Search -->
+                        <div class="header_search">
+                            <form action="#" id="header_search_form">
+                                <input type="text" class="search_input" placeholder="Поиск" required="required">
+                                <button class="header_search_button">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="user_icons">
+                            <!-- Profile -->
+                            <div class="profile"><a href="profile.html">
+                                    <div>
+                                        <i class="icon-profile-account"></i>
+                                        <div class="icon_text">Профиль</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Favorites -->
+                            <div class="favorites"><a href="favotites.html">
+                                    <div>
+                                        <i class="icon-favorites"></i>
+                                        <div class="icon_text">Избранное</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Cart -->
+                            <div class="cart"><a href="cart.html">
+                                    <div>
+                                        <i class="icon-bag"></i>
+                                        <div class="icon_text">Корзина</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </header>
+        <div class="super_container_inner">
+            <div class="super_overlay"></div>
+            <div class="profile_content_container">
+                <div class="profile_navigation">
+                    <ul class="profile_navigation_list"> 
+                        <li class="profile_navigation_item"><a href="#">Данные профиля</a></li>
+                        <li class="profile_navigation_item"><a href="#">Адрес доставки</a></li>
+                        <li class="profile_navigation_item profile_navigation_item-current"><a href="#">Заказы</a></li>
+                        <li class="profile_navigation_item profile_logout"><a href="#">Выйти из профиля</a></li>
+                    </ul>
+                </div>
+                <div class="profile_info">
+                    <div class="profile_info_header">
+                        <div class="custom_select">
+                            <div class="custom_select_top">Все заказы</div>
+                            <div class="custom_select_dropdown">
+                                <ul class="custom_select_list">
+                                    <li class="custom_select_item">Неоплаченные</li>
+                                    <li class="custom_select_item">В обработке</li>
+                                    <li class="custom_select_item">Доставляется</li>
+                                    <li class="custom_select_item">Отмененные</li>
+                                    <li class="custom_select_item">Полученные</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_info_orders">
+                        <div class="profile_info_order">
+                            <div class="profile_info_order_info">
+                                <div class="profile_info_item order_number"><p>Номер заказа: <span> №000831</span></p></div>
+                                <div class="profile_info_item order_status"><p>Статус заказа: <span>в обработке</span></p></div>
+                                <div class="profile_info_item order_date"><p>Дата оформления:<span> 12.05.2022</span></p></div>
+                                <div class="profile_info_item order_date"><p>Дата получения: <span> -</span></p></div>
+                                
+                            </div>
+                            <div class="order_products">  
+                                    <div class="order_slider_container">
+                                        <div class="order_slider">
+                                            <div class="slider_item"><a href="#">
+                                                <div class="item_image"><img src="images/products/product_1.jpg"></div>
+                                                <div class="item_description">
+                                                    <div class="item_name">Нежно-фиолетовый детский комплект на девочку</div>
+                                                    <div class="item_price"> 1300<span>руб</span></div>
+                                                </div>
+                                            </a></div>
+                                            <div class="slider_item"><a href="#">
+                                                <div class="item_image"><img src="images/products/product_2.jpg"></div>
+                                                <div class="item_description">
+                                                    <div class="item_name">Комплект детских топов на девочку</div>
+                                                    <div class="item_price"> 1500<span>руб</span></div>
+                                                </div>
+                                            </a></div>
+                                            <div class="slider_item"><a href="#">
+                                                <div class="item_image"><img src="images/products/product_3.jpg"></div>
+                                                <div class="item_description">
+                                                    <div class="item_name">Розовые шорты на резинке</div>
+                                                    <div class="item_price"> 750<span>руб</span></div>
+                                                </div>
+                                            </a></div>
+                                            <div class="slider_item"><a href="#">
+                                                    <div class="item_image"><img src="images/products/product_6.jpg"></div>
+                                                    <div class="item_description">
+                                                        <div class="item_name">Летний лавандовый костюм на девочку</div>
+                                                        <div class="item_price"> 1000<span>руб</span></div>
+                                                    </div>
+                                            </a></div>
+                                            <div class="slider_item"><a href="#">
+                                                    <div class="item_image"><img src="images/products/product_12.jpg"></div>
+                                                    <div class="item_description">
+                                                        <div class="item_name">Летний костюм с тигрятами</div>
+                                                        <div class="item_price"> 1000<span>руб</span></div>
+                                                    </div>
+                                            </a></div>
+                                            <div class="slider_item"><a href="#">
+                                                        <div class="item_image"><img src="images/popular_products/product_4.jpg"></div>
+                                                        <div class="item_description">
+                                                            <div class="item_name">Джинсы детские светло-голубые на мальчика</div>
+                                                            <div class="item_price"> 1000<span>руб</span></div>
+                                                        </div>
+                                            </a></div>
+                                        </div>
+                                        <a href="#" class="slider__control" data-slide="prev"></a>
+                                        <a href="#" class="slider__control" data-slide="next"></a>
+                                    </div>
+                            </div>
+                            <div class="total_price">Итого: 5990 руб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- Футтер -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_col">
+                    <a class="footer_link" href="#">О магазине</a>
+                    <a class="footer_link" href="#">Информация</a>
+                    <a class="footer_link" href="#">Клиентам</a>
+                    <a class="footer_link" href="#">Акции и скидки</a>
+                    <a class="footer_link" href="#">Как заказать</a>
+                    <a class="footer_link" href="#">Обмен и возврат</a>
+                </div>
+                <div class="footer_col">
+                    <a class="footer_link" href="#">Мои заказы</a>
+                    <a class="footer_link" href="#">Вопросы и ответы</a>
+                    <a class="footer_link" href="#">Личный кабинет</a>
+                </div>
+                <div class="footer_col">
+                    <a class="footer_link"></a>
+                </div>
+                <div class="footer_col">
+                    <div class="footer_text">Мы в соц.сетях:</div>
+                    <div class="footer_text">
+                        <a href="#"><i class="icon-vk"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        </div>
+        </div>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="styles/bootstrap-4.1.2/popper.js"></script>
+                <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+                <script src="plugins/greensock/TweenMax.min.js"></script>
+                <script src="plugins/greensock/TimelineMax.min.js"></script>
+                <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+                <script src="plugins/greensock/animation.gsap.min.js"></script>
+                <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+                <script src="plugins/easing/easing.js"></script>
+                <script src="plugins/progressbar/progressbar.min.js"></script>
+                <script src="plugins/parallax-js-master/parallax.min.js"></script>
+                <script src="plugins/slick/slick.min.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/profile_orders.js"></script>
+                <script src="js/slider.js" type="text/javascript"></script>
+                
+                
+                </body>
+                
+                </html>
